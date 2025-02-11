@@ -1,24 +1,25 @@
-import Header from './components/layout/Header'
-import SwiperX from './components/ui/Swiper'
+import * as React from "react";
+import {
+    createBrowserRouter,
+    Navigate,
+    Outlet,
+    RouterProvider,
+    useRouteError,
+} from "react-router-dom";
+import Index from "./pages/Index";
 
-function App() {
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Index />,
+    },
+]);
+
+
+export default function App() {
     return (
-        <>
-            {/* A responsive header with logo and: 
-
-    Home (current)
-    About Us
-    Packages
-    Rooms
-    Book Now
-    Gallery
-    Contact Us
-
- */}
-            <Header />
-            <SwiperX />
-        </>
-    )
+        <div>
+            <RouterProvider router={router} />
+        </div>
+    );
 }
-
-export default App
