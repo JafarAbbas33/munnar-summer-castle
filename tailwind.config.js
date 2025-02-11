@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-bg': 'var(--primary-bg)',
+        'primary-bg': '#00aeb0',
       },
     },
   },
