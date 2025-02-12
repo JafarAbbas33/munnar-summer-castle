@@ -39,8 +39,10 @@ function Index() {
 
     useEffect(() => {
         AOS.init({
-            once: false,
-            mirror: true,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
         });
         AOS.refresh();
     }, []);
