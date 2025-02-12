@@ -17,7 +17,8 @@ import munnarCastleLogo from '../assets/images/LOGO1.png';
 
 import { MdLocalLaundryService } from "react-icons/md";
 import { IoRestaurant } from "react-icons/io5";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import AOS from "aos";
 
 const navItems = [
     { label: 'Home', href: '/' },
@@ -35,6 +36,10 @@ function Index() {
     const roomsSectionRef = useRef(null);
     const footerRef = useRef(null);
 
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     const onNavItemClick = (event) => {
         const { key } = event.currentTarget.dataset;
