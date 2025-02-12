@@ -19,6 +19,7 @@ import { MdLocalLaundryService } from "react-icons/md";
 import { IoRestaurant } from "react-icons/io5";
 import { useEffect, useRef } from "react";
 import AOS from "aos";
+import "aos/dist/aos.css";
 
 const navItems = [
     { label: 'Home', href: '/' },
