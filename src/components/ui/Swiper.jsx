@@ -39,7 +39,7 @@ export default () => {
             pagination={{ clickable: true }}
             modules={[Pagination]}
             loop={true}
-            className='pb-12 h-[70vh] w-full'
+            className='detached-dots pb-12 h-[60vh] lg:h-[70vh] w-full'
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}
         >
