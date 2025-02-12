@@ -38,7 +38,10 @@ function Index() {
     const footerRef = useRef(null);
 
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+            once: false,
+            mirror: true,
+        });
         AOS.refresh();
     }, []);
 
@@ -66,7 +69,7 @@ function Index() {
                 <div className="col-span-1 p-4 pb-0 lg:pb-4 m-4 mb-0 lg:mb-4">
                     <Swiper />
                 </div>
-                <div className="col-span-1 p-4 m-4 mt-0 lg:mt-28">
+                <div data-aos={"fade-left"} className="col-span-1 p-4 m-4 mt-0 lg:mt-28">
                     <h2 className="text-4xl font-bold text-secondary-bg">
                         Welcome to the Tea Country
                     </h2>
@@ -82,7 +85,7 @@ function Index() {
             <hr className="border-gray-400 opacity-60 mx-12 lg:mx-80 mt-4" />
 
             <section ref={aboutSectionRef} className="py-1 lg:py-14 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
-                <div className="col-span-1 px-4 py-2 lg:py-4 mx-4 my-0 lg:my-4 mt-6 lg:mt-16">
+                <div data-aos={"fade-right"} className="col-span-1 px-4 py-2 lg:py-4 mx-4 my-0 lg:my-4 mt-6 lg:mt-16">
                     <h2 className="text-4xl font-bold text-secondary-bg">
                         About
                     </h2>
@@ -211,7 +214,7 @@ function Index() {
                 <div className="order-2 lg:order-1 col-span-1 p-4 m-4">
                     <SwiperAboutAdvanced />
                 </div>
-                <div className="order-1 lg:order-2 col-span-1 px-4 m-4 mt-0 lg:mt-16">
+                <div  data-aos={"fade-left"} className="order-1 lg:order-2 col-span-1 px-4 m-4 mt-0 lg:mt-16">
                     <h2 className="text-4xl font-bold text-secondary-bg">
                         Rooms
                     </h2>
@@ -258,7 +261,7 @@ function Index() {
             <hr className="border-gray-400 opacity-60 mx-12 lg:mx-80 mt-4" />
 
             {/* EROORRORORORROR */}
-            <section className="my-24">
+            <section  data-aos={"zoom-in"} className="my-24">
                 <div className='rounded-3xl text-white text-center font-bold text-sm lg:text-4xl my-0 lg:my-4 w-11/12 lg:w-3/4 mx-auto py-36 lg:py-96' style={{
                     backgroundImage: `url(${bookNowImg})`,
                     backgroundSize: 'cover',
