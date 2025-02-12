@@ -51,7 +51,7 @@ const Header = () => {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center">
-                        <a class="navbar-brand" href="index.html"><img className='w-32' src="https://munnarsummercastle.in/img/LOGO1.png" /></a>
+                        <a className="navbar-brand" href="index.html"><img className='w-32' src="https://munnarsummercastle.in/img/LOGO1.png" /></a>
                     </div>
 
                     {/* Desktop Navigation */}
