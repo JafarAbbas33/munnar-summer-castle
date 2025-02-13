@@ -67,7 +67,7 @@ function Index() {
     return (
         <>
             <Header welcomeSectionRef={welcomeSectionRef} aboutSectionRef={aboutSectionRef} highlightsSectionRef={highlightsSectionRef} roomsSectionRef={roomsSectionRef} footerRef={footerRef} />
-            <section ref={welcomeSectionRef} className="pt-24 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
+            <section ref={welcomeSectionRef} className="pt-24 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 overflow-hidden">
                 <div className="col-span-1 p-4 pb-0 lg:pb-4 m-4 mb-0 lg:mb-4">
                     <Swiper />
                 </div>
@@ -86,7 +86,7 @@ function Index() {
 
             <hr className="border-gray-400 opacity-60 mx-12 lg:mx-80 mt-4" />
 
-            <section ref={aboutSectionRef} className="py-1 lg:py-14 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
+            <section ref={aboutSectionRef} className="py-1 lg:py-14 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 overflow-hidden">
                 <div data-aos={"fade-right"} className="col-span-1 px-4 py-2 lg:py-4 mx-4 my-0 lg:my-4 mt-6 lg:mt-16">
                     <h2 className="text-4xl font-bold text-secondary-bg">
                         About
