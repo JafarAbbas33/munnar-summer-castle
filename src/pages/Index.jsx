@@ -212,7 +212,7 @@ function Index() {
             </section>
 
 
-            <section ref={roomsSectionRef} className="py-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 mt-12 lg:mt-0">
+            <section ref={roomsSectionRef} className="py-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 mt-12 lg:mt-0 overflow-hidden">
                 <div className="order-2 lg:order-1 col-span-1 p-4 m-4">
                     <SwiperAboutAdvanced />
                 </div>
